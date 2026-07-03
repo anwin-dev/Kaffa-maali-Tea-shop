@@ -110,7 +110,7 @@ const mapEmbedUrl =
                     Contact Us
                   </h3>
                   <p className="text-sm text-cream/70">
-                    Phone: <span className="text-cream">+91 90000 00000</span>
+                    Phone: <span className="text-cream">+91 98468 31119</span>
                   </p>
                   <p className="text-sm text-cream/70 mt-1">
                     Email: <span className="text-cream">hello@kaffamaali.com</span>

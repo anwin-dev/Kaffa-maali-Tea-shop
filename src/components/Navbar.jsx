@@ -165,7 +165,7 @@ export default function Navbar() {
                 href="https://wa.me/919000000000" 
                 className="font-serif text-lg text-cream hover:text-gold-accent transition-colors"
               >
-                +91 90000 00000
+                +91 98468 31119
               </a>
             </motion.div>
           </motion.div>
