@@ -10,10 +10,9 @@ export default function VisitUs() {
   );
   const waReserveUrl = `https://wa.me/${phoneNumber}?text=${messageText}`;
 
-  // Authentic coordinate search for Moodal, Kuttippuram, Kerala (Empire College area)
-  const mapEmbedUrl = 
-    "https://maps.google.com/maps?q=Moodal,%20Kuttippuram,%20Kerala,%20Empire%20College&t=&z=15&ie=UTF8&iwloc=&output=embed";
-
+  // Authentic coordinates for KAFFA MAALI, Kuttippuram
+const mapEmbedUrl =
+  "https://maps.google.com/maps?q=10.8727931,76.0466669&t=&z=17&ie=UTF8&iwloc=&output=embed";
   return (
     <section 
       id="visit" 

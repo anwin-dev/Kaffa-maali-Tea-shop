@@ -1,29 +1,112 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Premium SEO Metadata -->
-    <title>KAFFA MAALI | More Than a Cafe. A Mood.</title>
-    <meta name="description" content="Kaffa Maali is a premium rooftop & sunset evening cafe near Empire College in Moodal, Kuttippuram, Kerala. Experience artisan coffees, signature teas, late-night vibes, and Malabar gourmet treats." />
-    <meta name="keywords" content="Kaffa Maali, Kuttippuram cafe, rooftop cafe Kerala, evening hangout, sunset tea, late-night coffee shop, specialty coffee Kerala, Malabar treats, Moodal Kuttippuram" />
-    <meta name="author" content="Kaffa Maali Brand" />
-    
-    <!-- Open Graph (Social Sharing) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="KAFFA MAALI | Premium Cinematic Rooftop Cafe" />
-    <meta property="og:description" content="Discover Kuttippuram's favorite late-night rooftop evening cafe. Serene atmosphere, handcrafted drinks, and deep aesthetic vibes." />
-    <meta property="og:image" content="https://www.instagram.com/kaffa_maali" />
 
-    <!-- Google Fonts Connection -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-matte-black text-cream font-sans antialiased overflow-x-hidden">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>KAFFA MAALI | Premium Rooftop Cafe in Kuttippuram, Kerala</title>
+
+  <meta name="description"
+    content="Experience premium coffee, artisan tea, desserts, and breathtaking rooftop sunset vibes at Kaffa Maali, Moodal, Kuttippuram, Kerala." />
+
+  <meta name="keywords"
+    content="Kaffa Maali, Cafe in Kuttippuram, Rooftop Cafe Kerala, Coffee Shop Kuttippuram, Tea Cafe Kerala, Sunset Cafe, Moodal Cafe, Empire College Cafe" />
+
+  <meta name="author" content="KAFFA MAALI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kaffa-maali-tea-shop-yjna.vercel.app/" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0B0B0B" />
+
+  <!-- Geo -->
+  <meta name="geo.region" content="IN-KL" />
+  <meta name="geo.placename" content="Kuttippuram, Kerala" />
+  <meta name="geo.position" content="10.8727931;76.044092" />
+  <meta name="ICBM" content="10.8727931,76.044092" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="KAFFA MAALI | Premium Rooftop Cafe" />
+  <meta property="og:description"
+    content="More Than a Cafe. A Mood. Premium coffee, tea, desserts & rooftop sunset experience." />
+  <meta property="og:url" content="https://kaffa-maali-tea-shop-yjna.vercel.app/" />
+  <meta property="og:site_name" content="KAFFA MAALI" />
+  <meta property="og:image" content="https://kaffa-maali-tea-shop-yjna.vercel.app/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KAFFA MAALI | Rooftop Cafe" />
+  <meta name="twitter:description"
+    content="Experience premium coffee, rooftop sunsets, and unforgettable evenings." />
+  <meta name="twitter:image" content="https://kaffa-maali-tea-shop-yjna.vercel.app/og-image.jpg" />
+
+  <!-- Mobile -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "KAFFA MAALI",
+    "image": "https://kaffa-maali-tea-shop-yjna.vercel.app/og-image.jpg",
+    "url": "https://kaffa-maali-tea-shop-yjna.vercel.app/",
+    "telephone": "+918086136588",
+    "priceRange": "₹₹",
+    "servesCuisine": [
+      "Coffee",
+      "Tea",
+      "Desserts"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Empire College, Moodal",
+      "addressLocality": "Kuttippuram",
+      "addressRegion": "Kerala",
+      "postalCode": "679571",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "10.8727931",
+      "longitude": "76.044092"
+    },
+    "openingHours": "Mo-Su 16:00-23:30"
+  }
+  </script>
+
+</head>
+
+<body class="bg-matte-black text-cream font-sans antialiased overflow-x-hidden">
+
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+
 </html>

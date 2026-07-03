@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://kaffa-maali-tea-shop-yjna.vercel.app/sitemap.xml
