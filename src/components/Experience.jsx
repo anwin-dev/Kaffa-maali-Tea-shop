@@ -2,38 +2,47 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { IMAGES } from "../assets/images";
+import image3 from '../assets/image-3-kaffa-maali.png'
+import image4 from '../assets/image-4-kaffa-maali.png'
+import image5 from '../assets/image-5-kaffa-maali.png'
+import image2 from '../assets/image-2-kaffa-maali.png'
+
 
 const EXPERIENCE_SLIDES = [
   {
     id: 1,
-    title: "Twilight Serenade",
-    tagline: "Sunset Vibe",
-    description: "Catch the deep-gold Malabar horizon from our open-air rooftop as twilight colors paint the sky, providing a cozy escape after college.",
-    image: IMAGES.experience.sunset,
-    time: "4:00 PM - 6:30 PM",
+    title: "Sunset Stories",
+    tagline: "The Golden Hour at Kaffa Maali",
+    description:
+      "Witness Kerala's breathtaking golden hour from our open-air rooftop as the sun melts into the Malabar horizon. Enjoy handcrafted beverages, gentle evening breezes, and panoramic views that transform every sunset into a memory worth cherishing.",
+    image: image3,
+    time: "Golden Hour • 4:30 PM – Sunset",
   },
   {
     id: 2,
-    title: "Midnight Whispers",
-    tagline: "Late-Night Vibe",
-    description: "Open until 1:00 AM. Ambient filament bulbs, comfortable seating, soft music, and fresh steam coffee for late-night dreamers.",
-    image: IMAGES.experience.night,
-    time: "9:00 PM - 1:00 AM",
+    title: "Gather & Unwind",
+    tagline: "Where Every Table Has a Story",
+    description:
+      "From spontaneous college meetups to unforgettable family evenings, Kaffa Maali brings people together in a warm open-air setting where conversations flow, laughter lingers, and every shared moment becomes a lasting memory.",
+    image: image4,
+    time: "3:00 PM – 1:00 AM",
   },
   {
     id: 3,
     title: "Acoustic Gatherings",
-    tagline: "Social Vibe",
-    description: "Laugh with friends, share gourmet fusion platters, and enjoy live acoustic chill chords echoing under a starry velvet sky.",
-    image: IMAGES.experience.acoustic,
+    tagline: "Live Music Evenings",
+    description:
+      "Unwind beneath glowing lights with soulful acoustic performances, handcrafted refreshments, and gourmet fusion bites. Every melody creates the perfect backdrop for meaningful conversations and unforgettable nights.",
+    image: image2,
     time: "Weekly Specials",
   },
   {
     id: 4,
     title: "Monsoon Reveries",
-    tagline: "Rainy Vibe",
-    description: "Watch the spectacular Kerala monsoons sweep across Kuttippuram while cocooned under our transparent glass rain canopies with hot tea.",
-    image: IMAGES.experience.rainy,
+    tagline: "Rainy Day Retreat",
+    description:
+      "Experience the beauty of Kerala's monsoon from the comfort of our sheltered rooftop. Sip freshly brewed tea, enjoy comforting snacks, and watch the rain paint the surrounding landscape in peaceful serenity.",
+    image: image5,
     time: "Seasonal Magic",
   },
 ];
@@ -46,11 +55,11 @@ export default function Experience() {
     if (containerRef.current) {
       const container = containerRef.current;
       const scrollAmount = 360; // Approximate card width + gap
-      const newScrollLeft = 
+      const newScrollLeft =
         direction === "left"
           ? container.scrollLeft - scrollAmount
           : container.scrollLeft + scrollAmount;
-      
+
       container.scrollTo({
         left: newScrollLeft,
         behavior: "smooth",
@@ -65,8 +74,8 @@ export default function Experience() {
   };
 
   return (
-    <section 
-      id="experience" 
+    <section
+      id="experience"
       className="relative w-full py-24 md:py-32 bg-matte-black overflow-hidden px-6 md:px-12"
     >
       {/* Background aesthetics */}
@@ -82,7 +91,7 @@ export default function Experience() {
               The Kaffa Maali <span className="text-gradient-gold italic">Experience</span>
             </h2>
           </div>
-          
+
           {/* Custom Slider Navigation buttons */}
           <div className="flex items-center space-x-4">
             <button
@@ -114,11 +123,11 @@ export default function Experience() {
               className="flex-shrink-0 w-[290px] sm:w-[350px] snap-start"
             >
               <div className="glass-card flex flex-col h-[520px] overflow-hidden group select-none relative">
-                
+
                 {/* Image Section with parallax scaling */}
                 <div className="relative h-[240px] w-full overflow-hidden bg-charcoal-light">
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent z-10 pointer-events-none" />
-                  
+
                   {/* Absolute slide header labels */}
                   <div className="absolute bottom-4 left-6 z-20">
                     <span className="text-[10px] uppercase tracking-[0.25em] text-gold-accent font-semibold bg-matte-black/60 py-1 px-3.5 backdrop-blur-md">
@@ -147,7 +156,7 @@ export default function Experience() {
                     <h3 className="font-serif text-2xl text-cream font-medium tracking-wide mb-4 group-hover:text-gold-soft transition-colors duration-500">
                       {slide.title}
                     </h3>
-                    
+
                     <p className="font-sans text-xs sm:text-sm text-cream/60 leading-relaxed font-light">
                       {slide.description}
                     </p>
@@ -170,10 +179,10 @@ export default function Experience() {
 
         {/* Scroll Progress track indicator */}
         <div className="w-full h-[1px] bg-cream/10 mt-8 relative max-w-sm mx-auto">
-          <div 
+          <div
             className="absolute top-0 h-full bg-gradient-to-r from-gold-accent to-gold-soft transition-all duration-300 shadow-[0_0_4px_#d4af37]"
-            style={{ 
-              width: "35%", 
+            style={{
+              width: "35%",
               left: `${scrollProgress * 65}%`
             }}
           />

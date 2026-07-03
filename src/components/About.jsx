@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { IMAGES } from "../assets/images";
+import rightImageKaffaMaali from "../assets/image-2-kaffa-maali.png"
 
 export default function About() {
   return (
@@ -79,7 +80,7 @@ export default function About() {
             {/* Immersive photo asset */}
             <motion.div
               className="w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${IMAGES.aboutVibe})` }}
+              style={{ backgroundImage: `url(${rightImageKaffaMaali})` }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             />

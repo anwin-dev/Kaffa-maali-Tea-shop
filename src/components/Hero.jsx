@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { IMAGES } from "../assets/images";
+import bgImageKaffaMaali from "../assets/bg-kaffa-maali-2.png"
+
 
 export default function Hero() {
   const handleScrollTo = (e, targetId) => {
@@ -42,7 +44,7 @@ export default function Hero() {
       {/* Cinematic Background Image with continuous slow zoom */}
       <motion.div
         className="absolute inset-0 bg-cover bg-center pointer-events-none"
-        style={{ backgroundImage: `url(${IMAGES.heroBg})` }}
+        style={{ backgroundImage: `url(${bgImageKaffaMaali})` }}
         initial={{ scale: 1.15, opacity: 0 }}
         animate={{ scale: 1.0, opacity: 0.4 }}
         transition={{ duration: 3.5, ease: "easeOut" }}

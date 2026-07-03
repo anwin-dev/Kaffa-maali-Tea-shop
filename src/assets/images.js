@@ -1,6 +1,5 @@
 // High-Fidelity Cinematic Image Assets for KAFFA MAALI
 // Carefully curated from professional Unsplash photography matching our dark, luxury aesthetic
-
 export const IMAGES = {
   // Hero Background: Sunset/dusk rooftop cafe, string lights, cozy luxury vibe
   heroBg: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1920",
